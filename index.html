@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        :root {
+            --branco: #f0f8ff;
+            --roxo: #380B61;
+            --lilas: #59429d;
+            --lavanda: #CCBBFF;
+            --branco1: #ffffff;
+            --preto: rgba(0, 0, 0, 0.2);
+        }
+
+        body {
+            background-image: url(https://images.unsplash.com/photo-1523380360198-653413ad178b?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: var(--roxo);
+            text-align: center;
+
+        }
+
+        h1 {
+            margin-top: 50px;
+            color: var(--branco);
+        }
+
+        p {
+            color: var(--roxo);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bold;
+        }
+
+        section {
+            background-color: var(--lavanda);
+            margin: 50px;
+            padding: 20px;
+            border-radius: 30px;
+        }
+
+        #dados {
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+
+        input[type="number"] {
+            border-radius: 30px;
+            width: 50px;
+            height: 30px;
+            border: 3px solid var(--lilas);
+        }
+
+        input[type='button'] {
+            background-color: var(--lilas);
+            color: var(--branco);
+            border-radius: 10px;
+            width: 70px;
+            height: 50px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            border-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Vamos contar...</h1>
+    </header>
+
+    <section>
+        <div id="dados">
+            <p>Iniciamos em qual numero?
+            <p><input type="number" name="inicio" id="txti">
+
+            <p>Terminamos em qual numero? </p><input type="number" name="fim" id="txtf">
+
+            <p>Pulo quantos numeros?</p><input type="number" name="passo" id="txtp">
+
+            <p><input type="button" value="contar" onclick="contar()"></p>
+        </div>
+        <div id="resposta">
+            Preparendo a contagem...
+        </div>
+    </section>
+    <script src="ex01.js"></script>
+</body>
+
+</html>
